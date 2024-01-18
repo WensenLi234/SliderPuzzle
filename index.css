@@ -25,3 +25,25 @@
     width:fit-content;
     height:fit-content;
 }
+#buttons{
+    grid-template-rows: 100px 50px 50px;
+    display:grid;
+}
+.sideButton{
+    background-color:crimson;
+    border-style:solid;
+    border-color:blueviolet;
+    font-size:24px;
+}
+#scoreContainer{
+    background-color:coral;
+    text-align:center;
+}
+#numContainer{
+    background-color:aqua;
+    text-align:center;
+}
+#score{
+    grid-template-rows: 50px 50px;
+    display:grid;
+}
