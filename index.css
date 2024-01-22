@@ -15,6 +15,18 @@
 }
 #instructions{
     border-right: 0px;
+    grid-template-rows: 100px auto;
+    display:grid;
+}
+#instructionsTitle{
+    line-height: 100px;
+    font-size:30px;
+    text-align:center;
+    border-bottom:5px solid black;
+}
+#instructionsText{
+    font-size:24px;
+    text-align:left;
 }
 #gameContainer{
     margin:auto;
@@ -26,7 +38,7 @@
     height:fit-content;
 }
 #buttons{
-    grid-template-rows: 100px 50px 50px;
+    grid-template-rows: 100px 50px 50px auto;
     display:grid;
 }
 .sideButton{
@@ -35,15 +47,28 @@
     border-color:blueviolet;
     font-size:24px;
 }
-#scoreContainer{
-    background-color:coral;
-    text-align:center;
-}
-#numContainer{
-    background-color:aqua;
-    text-align:center;
-}
+
 #score{
     grid-template-rows: 50px 50px;
     display:grid;
+}
+#scoreContainer{
+    background-color:coral;
+}
+#numContainer{
+    background-color:aqua;
+}
+
+.scoreText{
+    line-height:50px;
+    font-size:24px;
+    text-align:center;
+}
+.text{
+    margin:auto;
+}
+#winText{
+    line-height:100%;
+    font-size:48px;
+    text-align:center;
 }

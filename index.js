@@ -5,6 +5,7 @@ const scoreText = document.getElementById("scoreNum");
 const totalPieces = 16;
 let score = 0;
 let gameStarted = false;
+
 // util functions
 
 /*
@@ -15,6 +16,7 @@ function getGridArea(element) {
     let array = element.style.gridArea.split(" / ");
     return [Number.parseInt(array[0]), Number.parseInt(array[1])];
 }
+
 // game functions
 
 function initialize(){
@@ -66,7 +68,7 @@ function checkForCompletion(){
 }
 
 function onGameWin(){
-    console.log("You won!");
+    document.getElementById("winTextContent").textContent = "You Win!";
 }
 
 function swapPlaces(buttonOne, buttonTwo) {
